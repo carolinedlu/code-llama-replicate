@@ -1,0 +1,13 @@
+build:
+  python_version: "3.11"
+  python_packages:
+    - pytorch==2.0.1
+    - torch
+    - fairscale
+    - fire
+    - sentencepiece
+  system_packages:
+    - "ffmpeg"
+    - "libavcodec-dev"
+  gpu: true
+predict: "predict.py:Predictor"
